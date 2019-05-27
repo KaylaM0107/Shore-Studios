@@ -1,3 +1,4 @@
+
 a:link, a:visited {
     text-decoration:none;
 }
@@ -6,9 +7,7 @@ a:link, a:visited {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 3.5fr 3.5fr 3.5fr 3.5fr 5fr 5fr 5fr 1fr;
     width: 100%;
-    background-color: #d2d5db;
-    overflow-x:hidden;
-    margin:0;
+    background-color: #22252C;
 }
 
 .jumbotron {
@@ -38,9 +37,13 @@ span.banner-msg {
     padding-bottom:10rem;
 }
 #nav-bar {
+    position:fixed;
+    top:0px;
+    z-index:5;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    background-color:#22252C;
     height:5rem;
     width:100%;
 }
@@ -71,9 +74,7 @@ padding-left:.5rem;
 padding-right:.6rem;
 }
 #header {
-    position:sticky;
     font-family: 'Arvo', serif;
-    top:0;
     color:white;
     height: 5rem;
     background-color:#22252C;
@@ -102,6 +103,7 @@ padding-right:.6rem;
     transition: all .3s ease-in-out;
 }
 
+
 .specA, .specB, .specC, .specD {
     display:flex;
     justify-content:center;
@@ -109,7 +111,20 @@ padding-right:.6rem;
     grid-column:2/3;
     background-color:#22252C;
 }
-.box {
+.boxA {
+    background:url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,dn_96,e_colorize:62,h_240,o_100,q_80,w_380/v1558970110/musicstockphoto1_il3dfq.jpg);
+}
+.boxB {
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:55,h_240,o_88,q_100,w_380/v1558973404/musicstockphoto6_ccvabw.jpg);
+}
+.boxC {
+    background:url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,dn_215,e_colorize:61,h_240,w_380/v1558972252/musicstockphoto5_cdzpbe.jpg);
+}
+.boxD {
+    background:url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,dn_216,e_colorize:63,h_240,w_380/v1558970105/musicstockphoto3_uwxccy.jpg);
+}
+
+.boxA, .boxB, .boxC, .boxD {
     display:flex;
     justify-content:center;
     align-items:center;
@@ -117,14 +132,26 @@ padding-right:.6rem;
     text-align:center;
     font-family: 'Arvo', serif;
     line-height:1.5;
-    background: #c8b8d1;
     height: 80%;
     width:80%;
-    opacity:.6;
-    color:#22252C;
+    opacity:.8;
+    color:white;
 }
-.box:hover {
+.boxA:hover {
     transform:scale(1.08);
+    transition: all .3s ease-in-out;
+}
+.boxB:hover {
+    transform:scale(1.08);
+    transition: all .3s ease-in-out;
+}
+.boxC:hover {
+    transform:scale(1.08);
+    transition: all .3s ease-in-out;
+}
+.boxD:hover {
+    transform:scale(1.08);
+    transition: all .3s ease-in-out;
 }
 .about, .equipment, .contact {
     grid-column: 1/5;
@@ -137,4 +164,12 @@ padding-right:.6rem;
 }
 span.box-text {
    padding:1rem;
+}
+
+.about {
+    background: #22252C;
+    color:white;
+    font-family: 'Arvo', serif;
+    margin-top:2rem;
+    text-align:center;
 }
