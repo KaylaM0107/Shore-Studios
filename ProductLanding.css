@@ -1,4 +1,3 @@
-
 a:link, a:visited {
     text-decoration:none;
 }
@@ -114,15 +113,23 @@ padding-right:.6rem;
 }
 .boxA {
     background:url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,dn_96,e_colorize:62,h_240,o_100,q_80,w_380/v1558970110/musicstockphoto1_il3dfq.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .boxB {
     background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:55,h_240,o_88,q_100,w_380/v1558973404/musicstockphoto6_ccvabw.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .boxC {
     background:url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,dn_215,e_colorize:61,h_240,w_380/v1558972252/musicstockphoto5_cdzpbe.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .boxD {
     background:url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,dn_216,e_colorize:63,h_240,w_380/v1558970105/musicstockphoto3_uwxccy.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .boxA, .boxB, .boxC, .boxD {
@@ -169,7 +176,7 @@ span.box-text {
 p {
     font-size: 1.2rem;
 }
-hr {
+#hr-about {
     border: 0;
     height: 1.2px;
     width:100%;
@@ -177,21 +184,24 @@ hr {
     margin-bottom:2rem;
 }
 #video {
-    border: solid 3px #22252C;
+    border: solid 2px #22252C;
     border-radius: .5rem;
 }
 span {
+    font-size:1.2rem;
     font-family: 'Arvo', 'serif';
 }
 .about-content {
-    font-size: 1.3rem;
     line-height:2rem;
     margin-left:8rem;
     margin-right:8rem;
     padding: 2rem;
     border-left:solid 1.2px #22252C;
-    opacity:.7;
+    opacity:.8;
 
+}
+p {
+    font-size: 1rem;
 }
 .about {
     position:relative;
@@ -230,14 +240,21 @@ span {
     z-index: -1;
 }
 .equipment {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap:.2rem;
+    grid-row-gap: .2rem;
     position:relative;
     z-index: 0;
     background:#22252C;
-    color:white;
+    color:white !important;
     font-family: 'Arvo', serif;
     margin-top:3rem;
-    padding: 3rem;
+    padding: 10rem;
     text-align:center;
+    opacity:.9;
+    line-height:2rem;
 }
 .equipment:after {
     background: inherit;
@@ -258,4 +275,109 @@ span {
     padding:8rem;
     text-align:center;
     font-family: 'Arvo', serif;
+}
+#hr-gear {
+    margin-top: 2.5rem;
+    grid-column:1/4;
+    grid-row:1/2;
+    height: 1px;
+    width:50%;
+    border:0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 255), rgba(0, 0, 0, 0));
+}
+.equip-content {
+    width:100%;
+    height: 1rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-bottom: 2rem;
+}
+.equip-caption {
+    margin-top:4rem;
+    width: 100%;
+    height: 1rem;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-size: .9rem;
+}
+#img-guitars {
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:30,w_250/v1559406196/Orange-Rocker-15_pe2enu.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 50% 35%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#img-amps {
+    border-top:solid 2px #22252C;
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:45,h_180,w_250/v1559405201/amps-small_oyzbzx.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 50% 30%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#img-amp-wall {
+    border-top:solid 2px #22252C;
+    border-right:solid 1px #22252C;
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:30,h_160,w_250/v1559405936/amps_gfo9gw.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 30% 60%;
+}
+#img-stack {
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:31,w_250/v1559406971/photo-8_egyudo.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 50% 30%;
+}
+#pedals {
+    border-left:solid 2px#22252C;
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:23,h_160,w_250/v1559409364/rattlethatlock_pedals_pdgors.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 50% 30%;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#mixing-board {
+    border-top:solid 2px #22252C;
+    border-left:solid 2px #22252C;
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:35,h_160,w_250/v1559409720/recordinggear_ds3zs9.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 50% 30%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#drum-kit {
+    border-right: solid 2px #22252C;
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:31,w_250/v1559420996/drums_vu0y5u.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 50% 70%;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#outboard {
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:32,w_250/v1559421421/006_g8kqf8.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 50% 30%;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+#twin {
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:42,w_250/v1559421780/twin_isxhxy.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#piano {
+    background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:35,w_250/v1559422059/dubway_piano_vfdco4.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 50% 30%;
+    grid-column: 3/4;
+    grid-row: 4/5;
 }
