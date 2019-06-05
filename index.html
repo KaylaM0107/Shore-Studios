@@ -59,7 +59,7 @@
 
   <div class="about" name="about">
     <div class="about-content">
-     <span>About Us</span><br><br>
+     <a name="info" class="about-info">About Us</a><br><br>
       <hr id="hr-about">
     <p>Af art party pok pok raclette affogato quinoa poke, chillwave fixie kale chips tofu yuccie. 
       Jean shorts freegan craft beer enamel pin VHS live-edge activated charcoal banh mi tote bag bitters 
@@ -72,11 +72,10 @@
           <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/wwLvEgEkERI" frameborder="0" allow="accelerometer; 
           autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <a name="gear-section"></a>
   </div>
-
+  
   <div class="equipment" name="equipment">
-      <span class="equip-content">In-House Gear</span>
+      <a name="gear-section" class="equip-content">In-House Gear</a>
       <hr id="hr-gear">
       <p class="equip-caption">
       All artists are always welcome to bring their own equipment, but in the event that you're in the mood to experiment tonally, we've got you covered.
@@ -92,11 +91,19 @@
       <div id="outboard"></div>
       <div id="twin"></div>
       <div id="piano"></div>
-      <a name="get-in-touch"></a>
+
   </div>
 
   
-  <div class="contact" name="contact">Get in Touch!</div>
+  <div class="contact" name="contact">
+      <a class="contact-title"name="get-in-touch">Book Your Time Now!</a><br><br>
+    <form action="#" class="booking">
+      <label for="your-name" name="your-name">*Name: </label>
+        <input type="text" placeholder="First and last" required>
+      <label for="email" name="email">*Email:</label>
+      <input type="email" id="book-email" placeholder="youremail@example.com" required>
+    </form>
+    </div>
   <footer id="footer">&copy Shore Studios</footer>
 
 </div>
