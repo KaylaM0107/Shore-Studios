@@ -256,8 +256,8 @@ p {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-column-gap:.2rem;
-    grid-row-gap: .2rem;
+    grid-column-gap:.8rem;
+    grid-row-gap: .8rem;
     position:relative;
     z-index: 0;
     color:white;
@@ -315,10 +315,12 @@ p {
     background-position: 50% 35%;
     grid-column: 1/2;
     grid-row: 2/3;
+    border-radius: 10px;
 }
 
 #img-amps {
     border-top:solid 2px #22252C;
+    border-radius: 10px;
     background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:45,h_180,w_250/v1559405201/amps-small_oyzbzx.jpg);
     background-repeat:no-repeat;
     background-size:cover;
@@ -333,12 +335,14 @@ p {
     background-repeat:no-repeat;
     background-size:cover;
     background-position: 30% 60%;
+    border-radius: 10px;
 }
 #img-stack {
     background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:31,w_250/v1559406971/photo-8_egyudo.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position: 50% 30%;
+    border-radius: 10px;
 }
 #pedals {
     border-left:solid 2px#22252C;
@@ -348,6 +352,7 @@ p {
     background-position: 50% 30%;
     grid-column: 1/2;
     grid-row: 3/4;
+    border-radius: 10px;
 }
 #mixing-board {
     border-top:solid 2px #22252C;
@@ -358,6 +363,7 @@ p {
     background-position: 50% 30%;
     grid-column: 1/2;
     grid-row: 2/3;
+    border-radius: 10px;
 }
 #drum-kit {
     border-right: solid 2px #22252C;
@@ -367,6 +373,7 @@ p {
     background-position: 50% 70%;
     grid-column: 3/4;
     grid-row: 3/4;
+    border-radius: 10px;
 }
 #outboard {
     background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:32,w_250/v1559421421/006_g8kqf8.jpg);
@@ -375,11 +382,13 @@ p {
     background-position: 50% 30%;
     grid-column: 2/3;
     grid-row: 4/5;
+    border-radius: 10px;
 }
 #twin {
     background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:42,w_250/v1559421780/twin_isxhxy.jpg);
     background-repeat:no-repeat;
     background-size:cover;
+    border-radius: 10px;
 }
 #piano {
     background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:35,w_250/v1559422059/dubway_piano_vfdco4.jpg);
@@ -388,6 +397,7 @@ p {
     background-position: 50% 30%;
     grid-column: 3/4;
     grid-row: 4/5;
+    border-radius: 10px;
 }
 .contact {
     display:grid;
@@ -459,6 +469,7 @@ color:white;
     grid-column: 2/3;
     grid-row: 2/3;
     border: solid 2px black;
+    border-radius: 10px;
     height: 30vh;
     width:30vw;
     margin-left: 6rem;
