@@ -491,7 +491,6 @@ color:white;
        justify-content: space-evenly;
        line-height:1.5rem;
    }
-
   }
 /*landscape tablet*/
 
@@ -536,6 +535,18 @@ color:white;
     #equipment {
         padding: 5rem;
     }
+    #text-box, .text, .book-email {
+        width: 18rem;
+    }
+    #phone {
+        margin-right:3rem;
+    }
+    #map {
+        margin-right: 2rem;
+        margin-left: 3rem;
+        width:35vw;
+    }
+
   }
 
   /*desktop*/
