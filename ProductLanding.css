@@ -83,6 +83,7 @@ padding-right:.6rem;
     height: 5rem;
     background-color:#22252C;
     grid-column: 1/3;
+    grid-row: 1/2;
     width: 100vw;
 }
 #form {
@@ -266,7 +267,6 @@ p {
     font-size: 1.2rem;
     margin-top:3rem;
     padding: 10rem;
-    
     text-align:center;
     opacity:.9;
     line-height:2rem;
@@ -476,3 +476,70 @@ color:white;
     margin-left: 6rem;
     margin-top: 2rem;
 }
+
+/*phones and portrait tablet*/
+
+@media only screen and (max-width: 775px) {
+   #nav-bar {
+       flex-direction: column;
+       height:15rem;
+       justify-content: space-evenly;
+   }
+   .main-nav{
+       flex-direction:column;
+       align-items:center;
+       justify-content: space-evenly;
+       line-height:1.5rem;
+   }
+
+  }
+/*landscape tablet*/
+
+  @media (min-width: 776px) and (max-width:960px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr .5fr .5fr .5fr .5fr .8fr 1fr 1fr .07fr;
+    }
+    .jumbotron {
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+    .specA {
+        grid-column:1/2;
+        grid-row: 4/5;
+    }
+    .specB {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .specC {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .specD {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .boxA, .boxB, .boxC, .boxD {
+        width: 80%;
+    }
+    #info {
+        margin-top:3rem;
+        padding:1rem;
+    }
+    .about-content {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    #equipment {
+        padding: 5rem;
+    }
+  }
+
+  /*desktop*/
+
+  @media (min-width: 1200px) {
+ 
+  }
