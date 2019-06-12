@@ -3,6 +3,8 @@ a:link, a:visited {
 }
 body {
     background:#22252C;
+    margin:0;
+    padding:0;
 }
 #container {
     display: grid;
