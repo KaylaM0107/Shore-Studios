@@ -661,6 +661,9 @@ width: 18rem;
 height: 12rem;
 font-size: 1rem;
 }
+#submit {
+    -webkit-appearance: none;
+}
 
   }
 /*landscape tablet*/
