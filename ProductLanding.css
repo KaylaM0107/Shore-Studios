@@ -103,6 +103,8 @@ padding-right:.6rem;
     background-color:#E14658;
     color:white;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 #submit:hover {
     cursor: pointer;
