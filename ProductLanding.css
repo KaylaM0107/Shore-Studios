@@ -495,14 +495,14 @@ color:white;
    #container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .25fr .5fr .3fr .3fr .3fr .3fr .5fr 5fr 1.5fr .07fr !important;
+    grid-template-rows: .25fr .5fr .3fr .3fr .3fr .3fr .5fr 3.5fr 1.5fr .07fr !important;
 }
 .jumbotron {
     grid-column: 1/3;
     grid-row: 1/3;
 }
 .banner {
-    margin-top: 30vh;
+    margin-top: 40vh;
     height: 30%
 }
 span.banner-msg {
@@ -552,49 +552,68 @@ span.banner-msg {
 }
 #equipment {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .3fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr;
-    grid-row-gap: 5rem;
-    padding: 2rem;
+    grid-template-rows: .3fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
+    padding: 3rem;
 }
 #img-guitars {
     grid-column: 1/4;
     grid-row: 2/3;
+    height: 20rem;
+    box-shadow: 2px 2px #E14658;
 }
 #img-amps {
     grid-column: 1/4;
     grid-row:3/4;
+    height: 20rem;
+    box-shadow: 2px 2px #E14658;
 }
 #pedals {
     grid-column: 1/4;
     grid-row: 4/5;
+    height: 20rem;
+    box-shadow: 2px 2px #E14658;
 }
 #img-amp-wall {
     grid-column: 1/4;
     grid-row: 5/6;
+    height: 20rem;
+    box-shadow: 2px 2px #E14658;
 }
 #img-stack {
     grid-column: 1/4;
     grid-row: 6/7;
+    height: 20rem;
+    box-shadow: 2px 2px #E14658;
 }
 #mixing-board {
  grid-column: 1/4;
  grid-row: 7/8;
+ height: 20rem;
+ box-shadow: 2px 2px #E14658;
 }
 #drum-kit {
     grid-column: 1/4;
     grid-row: 8/9;
+    height: 20rem;
+    box-shadow: 2px 2px #E14658;
 }
 #piano {
  grid-column: 1/4;
  grid-row: 9/10;
+ height: 20rem;
+ box-shadow: 2px 2px #E14658;
 }
 #twin {
     grid-column: 1/4;
     grid-row: 10/11;
+    height: 20rem;
+    box-shadow: 2px 2px #E14658;
 }
 #outboard {
     grid-column: 1/4;
     grid-row: 11/12;
+    height: 20rem;
+    box-shadow: 2px 2px #E14658;
 }
 .equip-caption, .equip-content {
     grid-column: 1/4;
