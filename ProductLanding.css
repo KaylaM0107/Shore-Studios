@@ -102,6 +102,7 @@ padding-right:.6rem;
     width: 6rem;
     background-color:#E14658;
     color:white;
+    -webkit-appearance: none;
 }
 #submit:hover {
     cursor: pointer;
