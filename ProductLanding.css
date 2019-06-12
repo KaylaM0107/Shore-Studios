@@ -15,7 +15,6 @@ body {
 
 .jumbotron {
     display:flex;
-    align-items:center;
     justify-content:center;
     grid-row: 2/6;
     background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,dn_67,e_colorize:58,w_914/v1558803396/oleg-ivanov-1175716-unsplash_gdqypu.jpg);
@@ -27,6 +26,7 @@ body {
 .banner {
     display:flex;
     opacity:.8;
+    margin-top:20vh;
     height:40%;
     width:100%;
     background: #3F3250;
@@ -173,7 +173,6 @@ padding-right:.6rem;
 }
 #info, #equipment, #contact {
     grid-column: 1/5;
-    background-color:white;
 }
 #footer {
     display:flex;
@@ -355,6 +354,7 @@ p {
     grid-row: 3/4;
     border-radius: 10px;
 }
+
 #mixing-board {
     border-top:solid 2px #22252C;
     border-left:solid 2px #22252C;
@@ -363,9 +363,10 @@ p {
     background-size:cover;
     background-position: 50% 30%;
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 4/5;
     border-radius: 10px;
 }
+
 #drum-kit {
     border-right: solid 2px #22252C;
     background: url(https://res.cloudinary.com/dqig1x5fi/image/upload/c_scale,co_rgb:3f3250,e_colorize:31,w_250/v1559420996/drums_vu0y5u.jpg);
@@ -479,7 +480,7 @@ color:white;
 
 /*phones and portrait tablet*/
 
-@media only screen and (max-width: 775px) {
+@media (min-width: 200px)and (max-width: 775px) {
    #nav-bar {
        flex-direction: column;
        height:15rem;
@@ -491,6 +492,117 @@ color:white;
        justify-content: space-evenly;
        line-height:1.5rem;
    }
+   #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .25fr .5fr .3fr .3fr .3fr .3fr .5fr 5fr 1.5fr .03fr !important;
+}
+.jumbotron {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.banner {
+    margin-top: 30vh;
+    height: 30%
+}
+span.banner-msg {
+    font-size:1.3rem;
+    color:white;
+    padding-bottom:5rem;
+}
+.specA {
+    grid-column:1/3;
+    grid-row: 3/4;
+}
+.specB {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.specC {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+.specD {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+#info, #equipment, #contact {
+    grid-column: 1/5;
+}
+#info {
+    padding-left: .01rem;
+    padding-right: .01rem;
+}
+.about-content {
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+#videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+	padding-top: 25px;
+    height:0;
+}
+#video {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+#equipment {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .4fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr;
+    grid-row-gap: 3rem;
+    padding: 5rem;
+}
+#img-guitars {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+#img-amps {
+    grid-column: 1/4;
+    grid-row:3/4;
+}
+#pedals {
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+#img-amp-wall {
+    grid-column: 1/4;
+    grid-row: 5/6;
+}
+#img-stack {
+    grid-column: 1/4;
+    grid-row: 6/7;
+}
+#mixing-board {
+ grid-column: 1/4;
+ grid-row: 7/8;
+}
+#drum-kit {
+    grid-column: 1/4;
+    grid-row: 8/9;
+}
+#piano {
+ grid-column: 1/4;
+ grid-row: 9/10;
+}
+#twin {
+    grid-column: 1/4;
+    grid-row: 10/11;
+}
+#outboard {
+    grid-column: 1/4;
+    grid-row: 11/12;
+}
+.equip-caption, .equip-content {
+    grid-column: 1/4;
+}
+.equip-caption {
+
+}
+
   }
 /*landscape tablet*/
 
@@ -543,8 +655,11 @@ color:white;
     }
     #map {
         margin-right: 2rem;
-        margin-left: 3rem;
-        width:35vw;
+        margin-left: 5rem;
+        width:30vw;
+    }
+    .booking {
+        margin-left:-3rem;
     }
 
   }
