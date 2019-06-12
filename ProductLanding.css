@@ -495,7 +495,7 @@ color:white;
    #container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .25fr .5fr .3fr .3fr .3fr .3fr .5fr 5fr 1.5fr .03fr !important;
+    grid-template-rows: .25fr .5fr .3fr .3fr .3fr .3fr .5fr 5fr 1.5fr .07fr !important;
 }
 .jumbotron {
     grid-column: 1/3;
@@ -552,9 +552,9 @@ span.banner-msg {
 }
 #equipment {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .4fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr;
-    grid-row-gap: 3rem;
-    padding: 5rem;
+    grid-template-rows: .3fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr .8fr;
+    grid-row-gap: 5rem;
+    padding: 2rem;
 }
 #img-guitars {
     grid-column: 1/4;
@@ -599,8 +599,45 @@ span.banner-msg {
 .equip-caption, .equip-content {
     grid-column: 1/4;
 }
-.equip-caption {
-
+#contact {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding:2rem;
+}
+#form-header {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    margin:auto;
+    padding-top:2rem;
+   
+}
+#phone {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin:auto;
+    padding-left:0;
+    padding-top:2rem;
+}
+#map {
+   grid-column: 1/3;
+   grid-row: 4/5;
+   margin:auto;
+   width:80%;
+}
+.booking {
+    width:45vw;
+    margin:auto;
+}
+.text, .book-email {
+    height: 2rem;
+    width:18rem;
+    font-size:1rem;
+}
+#text-box {
+width: 18rem;
+height: 12rem;
+font-size: 1rem;
 }
 
   }
@@ -661,11 +698,4 @@ span.banner-msg {
     .booking {
         margin-left:-3rem;
     }
-
-  }
-
-  /*desktop*/
-
-  @media (min-width: 1200px) {
- 
   }
